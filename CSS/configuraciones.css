@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+html{
+    font-family: 'Prompt', sans-serif;
+    font-size: 10px;
+    color: var(--color2);
+}
+
+
+/*Colores que sirven como variables en el css*/
+:root {
+    --color1 : rgba(30, 30, 47, 1);
+
+    --color2 : rgba(123, 197, 139, 1);
+    
+    --color3 : rgba(165, 174, 192, 1);
+    
+    --color4: rgba(62, 62, 76, 1);
+
+    --color5: rgba(244, 247, 251, 1); 
+
+    --color6 :rgb(231, 231, 231);
+}
+
+/*Media para versión escritorio*/
+@media only screen and (min-width: 1366px){
+    html{
+        font-size: 10px;
+    }
+}

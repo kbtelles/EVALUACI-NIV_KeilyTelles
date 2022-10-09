@@ -1,0 +1,98 @@
+/*Propiedades */
+
+.cuad_text{
+    width: 100%;
+    height: 50rem;
+}
+
+.img1_5{
+    width: 100%;
+    margin: 5rem 0rem 0rem;
+}
+
+.one{
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: var(--color5);
+    margin: 0rem 0rem 0rem 32rem;
+}
+
+.two{
+    width: 32rem;
+    height: 30rem;
+    background-color: var(--color5);
+
+    object-fit: cover; 
+}
+
+/********************************/
+
+.text_cont{
+    width: 100%;
+    position: absolute; /*Posición de la caja*/
+}
+
+.text_cont h1{
+    padding: 6rem 0rem 0rem 8rem;
+    color: var(--color1);
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.text_cont p{
+    padding: 2rem 1rem 0rem 8rem;
+    font-size: 1.8rem;
+    color: var(--color3);
+    font-weight: 500;
+}
+
+/*Este @media se ejecuta cuando la pantalla es mayor o igual a 1366px*/
+@media only screen and (min-width: 1366px){
+    /*Todo el código*/
+    .cuad_text{
+        width: 149.5rem;
+        height: 70rem;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .img1_5{
+        width: 60rem;
+        height: 60rem;
+        padding-top: 2rem;
+    }
+    
+    .one{
+        width: 8.5rem;
+        height: 8.5rem;
+        margin: 0rem 29rem 0rem -0rem;
+        background-color:var(--color5)    
+    }
+    
+    .two{
+        width: 52rem;
+        height: 32rem;
+        margin: 8.5rem 0rem 0rem -0rem;
+        background-color: var(--color5);
+    }
+    
+    /********************************/
+    
+    .text_cont{
+        width: 90rem;
+        height: 30rem;
+        padding-left: 7rem;
+    }
+    
+    .text_cont h1{
+        padding-top: 6rem;
+        font-size: 4rem;
+    }
+    
+    .text_cont p{
+        width: 65rem;
+        padding-top: 2rem;
+        font-size: 1.8rem;
+    }
+
+}

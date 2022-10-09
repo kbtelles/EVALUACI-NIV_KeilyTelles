@@ -1,0 +1,103 @@
+/*Propiedades de la sección de iconos*/
+
+.iconos{
+    width: 100%;
+}
+
+.iconos h1{
+    margin: 4rem 1.5rem 0rem 0rem;
+    color: var(--color1);
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*****************************/
+
+.imag_icon{
+    width: 100%;
+    height: 12rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.imag_icon .img1{
+    width: 12rem;
+    height: 6rem;
+    padding: 1rem;
+}
+
+.imag_icon .img2{
+    width: 12rem;
+    height: 6rem;
+    padding: 1rem;
+}
+
+.imag_icon .img3{
+    width: 13rem;
+    height: 5.5rem;
+    padding: 1rem;
+}
+
+.imag_icon .img4{
+    width: 12rem;
+    height: 5.5rem;
+    padding: 1rem;
+}
+
+.imag_icon .img5{
+    width: 12rem;
+    height: 5.5rem;
+    padding: 1rem;
+}
+
+/*Este @media se ejecuta cuando la pantalla es mayor o igual a 1366px*/
+@media only screen and (min-width: 1366px){
+    /*Todo el código*/    
+    .iconos h1{
+        width: 100%;
+        margin: 8rem 0rem 6rem 0rem;
+        font-weight: 600;
+    }
+    
+    /*****************************/
+    
+    .imag_icon{
+        width: 80%;
+        height: 12rem;
+        margin-left: 13rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around; /*Centrar el contenido*/
+    }
+    
+    .imag_icon .img1{
+        width: 16rem;
+        height: 7rem;
+    }
+    
+    .imag_icon .img2{
+        width: 13rem;
+        height: 7rem;
+    }
+    
+    .imag_icon .img3{
+        width: 15rem;
+        height: 7rem;
+    }
+    
+    .imag_icon .img4{
+        width: 15rem;
+        height: 6rem;
+        padding: 2rem 0rem 0rem 1rem;
+    }
+    
+    .imag_icon .img5{
+        width: 13rem;
+        height: 6rem;
+        padding: 2rem 0rem 0rem 1rem;
+    }
+    
+}

@@ -1,0 +1,149 @@
+
+/*ENCABEZADO*/
+header {
+    width: 100%;
+    height: 7.5rem;
+    color: var(--color2);
+    padding: 2rem;
+    border-bottom: var(--color3) 1px solid;
+    /*Alineación*/
+    display: flex; 
+    flex-direction:row;
+    align-items:flex-start;    
+}
+
+/*Imagen de Menú*/
+.menu{
+    width: 3rem;
+    height: 2em;
+    margin: 1rem 0rem 0rem 20rem;
+
+    position: relative;
+}
+
+.menui div{
+    position: absolute;     
+    left: -900px; 		/*Para que se esconda el submenú*/
+}
+
+.menui:hover div{
+    left:auto;	/*Mostrar submenú al pasar el mouse*/ 
+}
+
+.caja_men{
+    background-color: var(--color5);
+    text-align: center;
+    width: 10rem;
+    height: 21.5rem;
+    font-size: 1.4rem;
+    margin: 0rem 0rem 0rem 10rem;
+    list-style: none;
+}
+
+.opcion1, .opcion2, .opcion3, .opcion4, .opcion5 {
+    color: var(--color1);
+    font-weight: 700;
+}
+
+
+
+.opcion_0{
+    margin-top: 4rem;
+    color: var(--color2);
+    font-weight: 460;
+}
+
+.boton_0{
+    display: block; 
+    width: 10rem;
+    height: 3rem;
+    margin-top: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 2.5rem;
+    background-color: white;
+    text-decoration: none;
+    color: var(--color2);
+    font-weight: 460;
+    
+}
+
+.name{
+    font-size: 2.5rem;
+}
+
+
+/*Este @media se ejecuta cuando la pantalla es mayor o igual a 1366px*/
+@media only screen and (min-width: 1366px){
+    /*Todo el código*/
+    header {
+        width: 100%;
+        height: 7.5rem;
+        padding: 4rem 0rem 0rem 9rem;
+        border-bottom:inherit;
+        /*Alineación*/
+        display: flex; 
+        flex-direction:row;
+       position:absolute;
+    }
+
+    /*Imagen de Menú*/
+    .menu{
+        width: 0rem;
+        height: 0rem;
+    }
+
+    .menui div{
+        background-color: inherit;
+        position: static;     
+    }
+
+    .caja_men{
+        background-color: inherit;
+        margin-left: -0.1rem;
+        width: 100%;
+        height: 4rem;
+        display: flex;
+        flex-direction: row;
+        position:static;
+    }
+
+    .opcion1, .opcion2, .opcion3, .opcion4, .opcion5 {
+        width: 13rem;
+        padding: 0rem 0rem 0rem 1rem;
+        margin-left: 0.8rem;
+        font-size: 2rem;
+        color: var(--color1);
+        font-weight: 500;
+    }
+    
+    
+    .opcion_0{
+        margin-top: -0rem;
+        padding: 0rem 0rem 0rem 26rem;
+        color: var(--color2);
+        font-size: 2rem;
+        font-weight: 460;
+    }
+    
+    .boton_0{
+        margin-top: -1.2rem;
+        margin-left:  5rem;
+        display: block; 
+        background-color: white;
+        width: 14rem;
+        height: 6rem;
+        border-radius: 2rem;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.7rem;
+        color: var(--color2);
+        font-weight: 460;
+    }
+
+    .name{
+        padding-top: 0.4rem;
+        font-size: 3.2rem;
+    }
+}
